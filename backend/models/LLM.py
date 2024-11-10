@@ -49,12 +49,6 @@ def chat_with_model(prompt: str, model_name: str = "llama2"):
         return "Error: Invalid response from the LLM API."
 
 
-import json
-import re
-import requests
-
-OLLAMA_API_URL = "http://localhost:11434/api/chat"
-
 
 def extract_preferences(user_input: str, current_data: dict, model_name: str = "llama2") -> dict:
     """
